@@ -1,4 +1,8 @@
-from django.http import HttpResponse
+# athleth/views.py
+from django.shortcuts import render
+
 
 def home(request):
-    return HttpResponse("سلام، این صفحه اصلی اپ athleth است!")
+    return render(request, 'athleth/home.html')
+
+
